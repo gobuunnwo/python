@@ -1,4 +1,5 @@
-# update()はどんな時に記載しなくてはいけないのか
+# update()はどんな時に記載しなくてはいけないのか???
+# If there are actions is going on at window,have to write update().
 import pygame
 pygame.init()
 
@@ -70,8 +71,9 @@ man = player(200, 410, 64,64)
 # run変数(走るという行為のオブジェクト)
 run = True
 while run:
-    # ここでの動きがわからない
+    # clock.tick()関数　または　モジュール
     clock.tick(27)
+    
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
